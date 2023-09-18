@@ -5,12 +5,12 @@ import Login from "../components/Login/Login.jsx";
 
 const LoginPage = () => {
   const navigate = useNavigate();
-  const { isAuthenticated } = useSelector((state) => state.user);
+  // const { isAuthenticated } = useSelector((state) => state.user);
 
   useEffect(() => {
-    if(isAuthenticated === true){
-      navigate("/");
-    }
+    // if(isAuthenticated === true){
+    //   navigate("/");
+    // }
   }, [])
   
   return (
