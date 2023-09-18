@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "e-shop-tutorial",
+    "name": "Medical-Site",
     "builds": [
         {
             "src": "server.js",
