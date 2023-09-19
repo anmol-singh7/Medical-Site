@@ -3,7 +3,8 @@ import "./App.css";
 import {
   LoginPage,
   SignupPage,
-  // HomePage,
+  HomePage,
+  ActivationPage,
   FAQPage,
   ProfilePage,
 } from "./routes/Routes.js";
@@ -13,7 +14,10 @@ import './App.css';
 import { ToastContainer } from "react-toastify";
 import { server } from "./server";
 
+import Store from "./redux/store";
+import axios from "axios";
 
+import 'react-toastify/dist/ReactToastify.css';
 
 const App=()=> {
   return (
@@ -21,9 +25,13 @@ const App=()=> {
    
 
       <Routes>
-        {/* <Route path="/" element={<HomePage />} /> */}
+        <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/sign-up" element={<SignupPage />} />
+        <Route
+          path="/activation/:activation_token"
+          element={<ActivationPage />}
+        />
         <Route path="/faq" element={<FAQPage />} />
         <Route
           path="/profile"
