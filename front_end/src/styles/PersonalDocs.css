@@ -1,0 +1,24 @@
+.Doccontainer {
+  /* position: relative; */
+}
+
+.div1 {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+}
+
+.div2 {
+  display: none;
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+}
+
+.container:hover .div1 {
+  display: none;
+}
+
+.container:hover .div2 {
+  display: block;
+}

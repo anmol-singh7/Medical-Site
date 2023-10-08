@@ -1,0 +1,6 @@
+.profilePic{
+   width: 4vw; /* Adjust the width and height as needed */
+   height: 4vw;
+  border-radius: 50%; /* This creates a circular shape */
+  overflow: hidden; 
+}
